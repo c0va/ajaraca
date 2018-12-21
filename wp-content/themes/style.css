@@ -1,0 +1,131 @@
+/*
+Theme Name: Ajaraca Dos
+Theme URI: http://tallerdecodigo.com
+Author: Pablo Covarrubias
+Author URI: http://tallerdecodigo.com
+Description: Tema de WordPress Personalizado
+Version: 1.0
+*/
+
+@charset 'utf-8';
+
+/*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}
+
+
+/*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small}select,input,button,textarea{font:99% arial,helvetica,clean,sans-serif}table{font-size:inherit;font:100%}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%}
+
+
+/*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+h1{font-size:138.5%}h2{font-size:123.1%}h3{font-size:108%}h1,h2,h3{margin:1em 0}h1,h2,h3,h4,h5,h6,strong{font-weight:bold}abbr,acronym{border-bottom:1px dotted #000;cursor:help}em{font-style:italic}blockquote,ul,ol,dl{margin:1em}ol,ul,dl{margin-left:2em}ol{list-style:decimal outside}ul{list-style:disc outside}dl dd{margin-left:1em}th,td{border:1px solid #000;padding:.5em}th{font-weight:bold;text-align:center}caption{margin-bottom:.5em;text-align:center}p,fieldset,table,pre{margin-bottom:1em}input[type=text],input[type=password],textarea{width:12.25em;*width:11.9em}
+/*HTML5 element display*/
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
+/*Figures*/
+figure {margin: 0;}
+
+/* Utilities */
+.lst_reset, .lst_reset li { margin: 0; padding: 0; list-style: none; }
+.clear { clear:both; height:1px; margin:0; padding:0; font-size: 1px; line-height: 0; }
+* { box-sizing: border-box; }
+
+/* clearfix for modern browsers */
+.clearfix:before,
+.clearfix:after { content:""; display:table; }
+.clearfix:after { clear:both; }
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix { zoom:1; }
+
+
+/*** FONT FACE ***/
+
+@font-face {
+	font-family: 'Regular';
+	src: url('fonts/ufonts.com_bauer-bodoni-t-regular.eot');
+	src: local('☺'), url('fonts/ufonts.com_bauer-bodoni-t-regular.woff') format('woff'), url('fonts/ufonts.com_bauer-bodoni-t-regular.ttf') format('truetype'), url('fonts/ufonts.com_bauer-bodoni-t-regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bold';
+	src: url('fonts/bauer-bodoni-bold-5899302b33fc3.eot');
+	src: local('☺'), url('fonts/bauer-bodoni-bold-5899302b33fc3.woff') format('woff'), url('fonts/bauer-bodoni-bold-5899302b33fc3.ttf') format('truetype'), url('fonts/bauer-bodoni-bold-5899302b33fc3.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+/*** SIZING WITH REM ***/
+html { font-size: 62.5%; color: #231f20; } 
+body { font-size: 14px; font-size: 1.4rem; } /* =14px */
+h1   { font-size: 24px; font-size: 2.4rem; } /* =24px */
+
+.first{ margin-left: 0; padding-left: 0;}
+.last{ margin-right: 0; padding-right: 0;}
+
+.left{ float: left;}
+.right{ float: right;}
+
+.hidden{display: none!important;}
+
+
+
+/*** GENERAL ***/
+
+.container {position: relative;}
+
+.slider_gigante {position: fixed; top: 0px; width: 100%; overflow: hidden; opacity: .85;}
+.slider_gigante img {width: 100%; height: auto; margin-top: -25%;}
+
+header {position: fixed; left: 5%;}
+.logo {text-align: center; width: 206px; background: #fff; padding-top: 15px; border-top:15px solid #7684c0; padding-bottom: 15px; }
+.logo h1 {text-indent: -1000000px; height: 0px; margin: 0px;}
+.menu {width: 206px; background: #fff; margin-top: 20px; padding: 20px 0;}
+.menu ul {list-style: none; margin: 0 0 0 20px; padding: 0px;}
+.menu ul li {font-size: 20px; margin-bottom: 10px;}
+.menu ul li:last-child {margin-bottom: 0px;}
+.menu ul li a {color: #231f20; text-decoration: none; font-family: 'Bold', 'Georgia';}
+.menu ul li a.selected {color: #7684c0; text-decoration: underline;	}
+
+.contenido {width: 70%; margin: 0 0 0 25%; max-width: 900px; padding: 100px; background: #fff; border-top:15px solid #7684c0;}
+.contenido p {font-family: 'Regular', 'Georgia'; font-size: 20px; line-height: 30px;}
+.contenido h6 {font-family: 'Regular', 'Georgia'; font-size: 20px; line-height: 30px; color:#7684c0;}
+.contenido p strong {font-family: 'Bold', 'Georgia'; font-weight: bold;}
+.contenido ul {margin: 0 0 0 20px; padding: 0px; font-family: 'Regular', 'Georgia'; font-size: 20px; line-height: 30px; list-style-type: square; }
+.contenido ul li {margin-bottom: 10px; }
+.contenido h2 {font-family: 'Bold', 'Georigia'; font-size: 25px; margin-top: 0px; margin-bottom: 20px;}
+
+.programas {width: 70%; margin: 0 0 0 25%; max-width: 900px; padding: 20px 20px 20px 20px; border-top:15px solid #7684c0;}
+.programas .programa {width: 48%; float: left; margin-right: 4%; padding: 20px; }
+.programas .programa:nth-child(2n){margin-right: 0px;}
+.programas .programa h3 {font-family: 'Bold', 'Georgia'; font-size: 22px; margin: 0 0 10px 0;}
+.programas .programa img {width: 100%; height: auto;}
+
+.carrusel_fotos {width: 100%; margin-bottom: 20px;  }
+.carrusel_fotos img {width: 33%; height: auto; float: left; vertical-align: middle;}
+
+.contacto form {width: 60%;  font-size: 18px;}
+.fields {width: 100%; margin-bottom: 10px; }
+.contacto form h5 {font-family: 'Regular', 'Georgia'; float: left; width: 40%; text-align: right;  font-size: 20px; margin-right: 20px;}
+.contacto form input {width: 50%; float: left; padding: 5px; font-family: 'Regular';}
+.contacto textarea {width: 50%!important; border-color: #ccc ; font-family: 'Regular'; padding: 5px;}
+
+
